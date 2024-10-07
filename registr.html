@@ -1,0 +1,79 @@
+
+  <link rel="stylesheet" href="../CSS/style.css">
+  <link rel="stylesheet" href="../CSS/registro.css">
+</head>
+<body>
+  <header>
+    <div class="LogoUleam">
+        <img src="../IMG/logouleam.png">
+    </div>
+    
+</header>
+
+      </header>
+    <div class="contenedor-form">
+        <div class="img-titulo-E">
+          <div class="contenedor-titulo">
+            <p class="titulo"><span>Registro</span>Usuario</p>
+            
+          </div>
+        </div>
+        <div class="formulario">
+          <form id="form" action="" method="POST">
+            <div class="form-title">
+                <p> <span class="registro">Registro</span> de <span class="estudiante">Estudiantes</span></p>
+                <p>Crea una cuenta para ingresar</p>
+            </div>
+            <div class="tipo-usuario">
+              <p>Seleccionar tipo de usuario:</p>
+              <select id="tipo-usuario" name="tipo-usuario" required>
+                <option value="estudiante">Estudiante</option>
+                <option value="tutor">Tutor</option>
+              </select>
+            </div>
+            
+            <div>
+                <p>Ingresar Nombres:</p>
+                <input id="nombre"type="text" name="nombre" placeholder="  Nombres" required>
+            </div>
+            <div>
+              <p>Ingresar Apellido:</p>
+              <input id="apellido"type="text" name="apellido" placeholder="  Apellido" required>
+            </div>
+            
+            <div>
+              <p>Ingresar Cedula:</p>
+              <input id="cedula" type="number" name="cedula" placeholder="  N. de cedula" required>
+            </div>
+            <div>
+              <p>Ingresar Celular:</p>
+              <input id="celular" type="number" name="celular" placeholder="  N. de celular" required>
+          </div>
+        
+
+
+            <div class="correo-password">
+               
+               <p>Ingresar Correo electronico:</p> 
+               <input id="correo" type="email" name="correo" placeholder="  Correo electronico" required>
+                <div class="pass">
+                  <p>Ingrese Contraseña:</p>
+                  <input id="password" type="password" name="pasword" placeholder="  Contraseña" required>
+                  Confirmar Contraseña:
+                <input id="passwordC" type="password" name="paswordC" placeholder=" Confirmar contraseña" required>
+                </div>
+            </div>
+            <p class="condiciones">Al registrarse aceptas nuestras <b>Condiciones</b> y <b>politicas de datos</b></p>
+            <div class="boton">
+                <button class="enviar" id="enviar" type="submit">Registrarse</button>
+            </div>
+           
+        </form>
+        </div>
+        
+    </div>
+
+    <script src="../js/registro.js"></script>
+</body>
+</html>
+
